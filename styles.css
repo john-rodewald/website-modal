@@ -111,18 +111,3 @@ h1 {
     text-decoration: inherit;
     border: inherit;
 }
-
-#gid-iframe-close {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    color: grey;
-    font-size: 2em;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 600px) { 
-    #gid-iframe-close {
-        padding: 1em;
-    }
-}

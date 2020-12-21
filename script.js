@@ -1,5 +1,6 @@
-const onClickJoinGroup = () => {
-    const modal = document.querySelector('#gid-iframe');
 
-    modal.setAttribute('src', modal.getAttribute('data-src'));
+const onClickJoinGroup = () => {
+    const iframe = document.querySelector('#gid-iframe');
+
+    iframe.setAttribute('src', modal.getAttribute('data-src'));
 };
