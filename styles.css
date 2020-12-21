@@ -73,9 +73,20 @@ h1 {
     align-content: center;
 }
 
-iframe {
+#gid-iframe-container {
+    background: white;
     height: 48em;
     width: 32em;
-    background: white;
     vertical-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+#gid-iframe {
+    background:url('https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif') center center no-repeat;
+    height: 48em;
+    width: 32em;
+    vertical-align: center;
+    text-decoration: none;
+    border: none;
 }

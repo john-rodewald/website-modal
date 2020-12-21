@@ -7,6 +7,7 @@
     <title>Awesome website</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js"></script>
+    <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" class="preload" style="display: none"></img>
 </head>
 <body>
 
@@ -31,14 +32,16 @@
         <div id="join-group-container">
             <!-- thumbnail image wrapped in a link -->
             <a href="#join-group-button-lightbox">
-                <button id="join-group-button" type="button">Join this group</button>
+                <button id="join-group-button" type="button" onclick="onClickJoinGroup()">Join this group</button>
             </a>
             
             <!-- lightbox container hidden with CSS -->
             <a href="#" class="lightbox" id="join-group-button-lightbox">
                 <span>
                     <div class="spacer"></div>
-                    <iframe src="https://review.gidstaging.net/TM5-1546-android-firefox-selfie-bug-fix/web-client-2/?&client_id=b88e6b0a-8481-4749-bc5a-892e2acd65aa&response_type=code&scope=openid&color=80a1fe&redirect_uri=https%3A%2F%2Fapps.globalid.construction%2Fdemo%2Fresult&acrc_id=938bd67d-f7e7-496f-9f3b-b58a9aeeb89c&nonce=60e995a4-f82d-4b85-a43b-1f99f0f0248a"></iframe>
+                    <div id="gid-iframe-container">
+                        <iframe id="gid-iframe" data-src="https://review.gidstaging.net/TM5-1546-android-firefox-selfie-bug-fix/web-client-2/?&client_id=b88e6b0a-8481-4749-bc5a-892e2acd65aa&response_type=code&scope=openid&color=80a1fe&redirect_uri=https%3A%2F%2Fapps.globalid.construction%2Fdemo%2Fresult&acrc_id=938bd67d-f7e7-496f-9f3b-b58a9aeeb89c&nonce=60e995a4-f82d-4b85-a43b-1f99f0f0248a"></iframe>
+                    </div>
                     <div class="spacer"></div>
                 </span>
             </a>
