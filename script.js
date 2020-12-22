@@ -1,4 +1,4 @@
-const onClickJoinGroup = () => {
+function onClickJoinGroup () {
     const iframe = document.querySelector('#gid-iframe');
 
     iframe.setAttribute('src', iframe.getAttribute('data-src'));
@@ -19,11 +19,14 @@ function onMessage(event) {
     }
 }
 
-// Function to be called from iframe
-function parentFunc(message) {
-    alert(message);
+// Function that gets called from iframe
+function parentFunc(params) {
+    onCompleteFlow(params);
+}
+
+function onCompleteFlow(params) {
     window.location.replace('joined.html');
-    document.cookie = `username=${message}`;
+    document.cookie = `username=${params}`;
 }
 
 function readCookie(name) {
