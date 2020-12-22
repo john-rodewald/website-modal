@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+    <title>Awesome website</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+    <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" class="preload" style="display: none"></img>
+</head>
+<body>
+
+    <img id="logo" src="https://pbs.twimg.com/profile_images/1250138409978548229/5OO5UWpT_400x400.png" alt="logo"></img>
+    
+    <div id="main-container">
+        <div id="content-container">
+            <h1>Well done!</h1>
+            <div id="success-text" style="text-align: center;" value="hello">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    const username = readCookie('username');
+    const successText = `Thanks for joining, <strong>${username}</strong>`;
+    document.querySelector('#success-text').innerHTML = successText;
+    document.cookie = username + '=; Max-Age=0'
+</script>
+</html>
