@@ -182,6 +182,6 @@
     const username = getUserName();
     const successText = `Thanks for joining, <strong>${username}</strong>.`;
     document.querySelector('#success-text').innerHTML = successText;
-    document.cookie = username + '=; Max-Age=600'
+    document.cookie = `${username}'=; Max-Age=600`;
 </script>
 </html>
