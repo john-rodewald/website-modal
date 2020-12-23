@@ -16,7 +16,21 @@ body {
     background: white;
     width: 100%;
     object-fit: none;
+    text-align: center;
 }
+
+#username {
+    position: relative;
+    right: 10em;
+    bottom: 2.5em;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1600px) { 
+    #username {
+        display: none;
+    }
+} 
 
 #main-container {
     display: grid;
@@ -28,6 +42,7 @@ body {
     background: white;
     height: 100%;
     object-fit: none;
+    margin-right: 1em;
 }
 
 #payment-container {
