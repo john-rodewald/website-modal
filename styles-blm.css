@@ -31219,7 +31219,7 @@ video {
   vertical-align: center;
   text-decoration: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 1em;
 }
 
@@ -31228,7 +31228,7 @@ video {
     width: 100vw;
     height: 100vh;
     padding: 0;
-    border-radius: 8px;
+    border-radius: 16px;
   }
 }
 
