@@ -16,7 +16,21 @@
         <img id="header" src="./assets/svg/paypaul-header.svg"></img>
         <div id="banner-container">
             <img id="banner-title" src="./assets/svg/paypaul-banner-title.svg"></img>
-            <button id="banner-button" onclick="onCompletePayPaulFlow()">Signup for free</button>
+            <a href="#join-group-button-lightbox">
+                <button id="banner-button" onclick="onClickJoinGroup()">
+                    Signup for free
+                </button>
+            </a>
+
+            <a href="#_" class="lightbox" id="join-group-button-lightbox">
+                <span>
+                    <div class="spacer"></div>
+                    <div id="gid-iframe-container">
+                        <iframe id="gid-iframe" data-src="https://review.gidstaging.net/hackatron-test/web-client-2/?&client_id=b88e6b0a-8481-4749-bc5a-892e2acd65aa&response_type=code&scope=openid&color=80a1fe&redirect_uri=https%3A%2F%2Fapps.globalid.construction%2Fdemo%2Fresult&acrc_id=be264f4e-56d0-486b-80a4-f777da38da2a&nonce=a411c7ea-6bed-4af5-92d0-067861bfc3e2&quickregisteruser=true"></iframe>
+                    </div>
+                    <div class="spacer"></div>
+                </span>
+            </a>
             <img id="banner-subtitle" src="./assets/svg/paypaul-banner-subtitle.svg"></img>
         </div>
     </img>
@@ -27,3 +41,5 @@
 </body>
 
 </html>
+
+
