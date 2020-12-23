@@ -182,7 +182,7 @@
     const username = getUserName();
     const successText = `Thanks for joining, <strong>${username}</strong>.`;
     document.querySelector('#success-text').innerHTML = successText;
-    document.querySelector('#password-recovery-redirect').href = `https://review.gidstaging.net/hackatron-test/web-client-2/?client_id=eea4ed22-46ab-430d-91f6-b6b96e05d4b6&response_type=code&scope=public&redirect_uri=https://global.id&login=true&nonce=undefined&username=${username}`
+    document.querySelector('#password-recovery-redirect').href = `https://review.gidstaging.net/hackatron-test/web-client-2/?&client_id=b88e6b0a-8481-4749-bc5a-892e2acd65aa&response_type=code&scope=openid&redirect_uri=https%3A%2F%2Fapps.globalid.construction%2Fdemo%2Fresult&acrc_id=fed885c0-30c5-4fd4-a8fc-144ae86d89b1&nonce=9f57eec6-ccfb-49f4-bac6-dcc57b8bd9ca&login=true`
     document.cookie = `${username}'=; Max-Age=600`;
 </script>
 </html>
