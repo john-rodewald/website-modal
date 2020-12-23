@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Averta';
+  src: url('./assets/averta.woff2') format('woff2');
+}
+
+* {
+    font-family: Averta;
+}
+
+body {
+    font-family: sans;
+    text-align: center;
+    margin: 0;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: blur(4px) brightness(50%);
+}
+
+#logo {
+    margin: 2em;
+    object-fit: contain;
+    width: 2em;
+}
+
+#links-container {
+    color: white;
+}
+
+.header-link {
+    font-size: 1.25em;
+    display: inline-block;
+    margin: 1em;
+    margin-top: 2em;
+}
+
+.signup-link {
+    color: white;
+    border: 2px solid white;
+    border-radius: 32px;
+    background: none;
+    width: 8em;
+    height: 3em;
+    font-weight: bold;
+    margin: 1em;
+    margin-top: 2em;
+}
+
+.signup-link#signup {
+    background: white;
+    color: black;
+    margin-right: 2em;
+}
+
+.signup-link:hover, .header-link:hover {
+    filter: opacity(70%);
+    cursor: pointer;
+}
