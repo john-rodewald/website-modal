@@ -179,10 +179,9 @@
 </body>
 
 <script>
-    let username = readCookie('username');
-    if (!username) { username = 'username' };
+    const username = getUserName();
     const successText = `Thanks for joining, <strong>${username}</strong>.`;
     document.querySelector('#success-text').innerHTML = successText;
-    document.cookie = username + '=; Max-Age=0'
+    document.cookie = username + '=; Max-Age=600'
 </script>
 </html>

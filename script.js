@@ -38,6 +38,12 @@ function onCompletePayPaulFlow (params) {
     document.cookie = `username=${params}`;
 }
 
+function getUserName () {
+    const maybeUserName = readCookie('username');
+
+    return maybeUserName ? maybeUserName : 'username';
+}
+
 function readCookie (name) {
 	var nameEQ = name + "=";
 	var ca = document.cookie.split(';');
