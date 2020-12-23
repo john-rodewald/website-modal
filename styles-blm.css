@@ -31221,6 +31221,7 @@ video {
   border: none;
   border-radius: 16px;
   padding: 1em;
+  transform: scale(0.8);
 }
 
 @media only screen and (max-width: 600px) {
