@@ -80,7 +80,7 @@
 
         <img class=" w-3/4 mx-auto mt-64" src='./assets/png/blm-people.png' />
         <div class="my-16">
-          <span class="font-extrabold ">Hey we are 100+ members away, <a href="#" style="color: #0D51FF">click here </a>
+          <span class="font-extrabold ">Hey we are 100+ members away, <a id="password-recovery-redirect" style="color: #0D51FF">click here </a>
  to invite your friends to join!</span>
         </div>
         <div>
@@ -182,6 +182,7 @@
     const username = getUserName();
     const successText = `Thanks for joining, <strong>${username}</strong>.`;
     document.querySelector('#success-text').innerHTML = successText;
+    document.querySelector('#password-recovery-redirect').href = `https://review.gidstaging.net/hackatron-test/web-client-2/?client_id=eea4ed22-46ab-430d-91f6-b6b96e05d4b6&response_type=code&scope=public&redirect_uri=https://global.id&login=true&nonce=undefined&username=${username}`
     document.cookie = `${username}'=; Max-Age=600`;
 </script>
 </html>
