@@ -18,25 +18,29 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 #bg {
     position: absolute;
     top: 0;
     left: 0;
-    height: 50vh;
+    height: 96em;
+    max-height: 60vh;
     width: 100vw;
     object-fit: cover;
-    filter: blur(4px) brightness(50%);
+    filter: brightness(35%);
 }
 
 #logo {
     margin: 2em;
     object-fit: contain;
     width: 2em;
+}
+
+#gid-logo {
+    vertical-align: text-bottom;
 }
 
 #links-container {
@@ -53,7 +57,7 @@ body {
 .signup-link {
     color: white;
     border: 2px solid white;
-    border-radius: 32px;
+    border-radius: 50px;
     background: none;
     width: 8em;
     height: 3em;
@@ -65,10 +69,46 @@ body {
 .signup-link#signup {
     background: white;
     color: black;
-    margin-right: 2em;
 }
 
-.signup-link:hover, .header-link:hover {
+.signup-link:hover, .header-link:hover, #logo:hover {
     filter: opacity(70%);
     cursor: pointer;
+}
+
+#banner-container {
+    position: relative;
+    margin-top: 10%;
+    color: white;
+}
+
+#banner-container * {
+    margin-top: 1em;
+}
+
+#banner-title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#banner-button {
+    background-color: #0D51FF;
+    color: inherit;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5em 4em;
+}
+
+#banner-button:hover {
+    filter: brightness(125%);
+    cursor: pointer;
+}
+
+#content-container {
+    margin-top: 5%;
+    padding-top: 5%;
+    position: relative;
+    background: white;
 }
