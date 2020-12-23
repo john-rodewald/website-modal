@@ -28,6 +28,10 @@ function parentFunc (params) {
     onCompleteBLMFlow(params);
 }
 
+function storeTin (params) {
+    onCompletePayPaulFlow(params);
+}
+
 function onCompleteBLMFlow (params) {
     redirect('blm-joined.html');
     document.cookie = `username=${params}`;
@@ -35,13 +39,19 @@ function onCompleteBLMFlow (params) {
 
 function onCompletePayPaulFlow (params) {
     redirect('paypaul-login.html');
-    document.cookie = `username=${params}`;
+    document.cookie = `tin=${params}`;
 }
 
 function getUserName () {
     const maybeUserName = readCookie('username');
 
     return maybeUserName ? maybeUserName : 'username';
+}
+
+function getTIN () {
+    const maybeTIN = readCookie('tin');
+
+    return maybeTIN ? maybeTIN : '123456789';
 }
 
 function readCookie (name) {

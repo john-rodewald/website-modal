@@ -32,4 +32,12 @@
     </div>
 </body>
 
+<script>
+    const tin = getTIN();
+    const username = getUserName();
+    document.querySelector('#tin').innerHTML = tin;
+    document.querySelector('#username').innerHTML = username;
+    document.cookie = `${tin}'=; Max-Age=600`;
+    document.cookie = `${username}'=; Max-Age=600`;
+</script>
 </html>
