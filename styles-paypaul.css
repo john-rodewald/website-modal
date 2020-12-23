@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Averta';
-  src: url('./assets/averta.woff2') format('woff2');
+  src: url('./assets/fonts/averta.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Averta-Black';
-  src: url('./assets/averta-black.woff2') format('woff2');
+  src: url('./assets/fonts/averta-black.woff2') format('woff2');
 }
 
 * {

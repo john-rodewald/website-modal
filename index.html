@@ -34,7 +34,6 @@
             <a href="#join-group-button-lightbox">
                 <button id="join-group-button" type="button" onclick="onClickJoinGroup()">Join this group</button>
             </a>
-            <button id="skip" onclick="parentFunc('username')">Skip signup and invoke callback</div>
             
             <!-- lightbox container hidden with CSS -->
             <a href="#" class="lightbox" id="join-group-button-lightbox">
@@ -46,6 +45,13 @@
                     <div class="spacer"></div>
                 </span>
             </a>
+        </div>
+        <div id="navigation-container">
+            <div id="navigation-title">List of demo pages for quick reference</div>
+            <button class="navigation-entry" onclick="redirect('blm.html')">BLM</button>
+            <button class="navigation-entry" onclick="redirect('blm-joined.html')">BLM (logged in)</button>
+            <button class="navigation-entry" onclick="redirect('paypaul.html')">PayPaul</button>
+            <button class="navigation-entry" onclick="redirect('paypaul-login.html')">PayPaul (logged in)</button>
         </div>
     </div>
 

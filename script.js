@@ -1,3 +1,7 @@
+function redirect (route) {
+    window.location.href = route;
+}
+
 function onClickJoinGroup () {
     const iframe = document.querySelector('#gid-iframe');
 
@@ -12,7 +16,7 @@ else if (window.attachEvent) {
     window.attachEvent("onmessage", onMessage, false);
 }
 
-function onMessage(event) {
+function onMessage (event) {
     var data = event.data;
     if (typeof (window[data.func]) == "function") {
       window[data.func].call(null, data.message);
@@ -20,16 +24,21 @@ function onMessage(event) {
 }
 
 // Function that gets called from iframe
-function parentFunc(params) {
-    onCompleteFlow(params);
+function parentFunc (params) {
+    onCompleteBLMFlow(params);
 }
 
-function onCompleteFlow(params) {
-    window.location.href = 'blm-joined.html';
+function onCompleteBLMFlow (params) {
+    redirect('blm-joined.html');
     document.cookie = `username=${params}`;
 }
 
-function readCookie(name) {
+function onCompletePayPaulFlow (params) {
+    redirect('paypaul-login.html');
+    document.cookie = `username=${params}`;
+}
+
+function readCookie (name) {
 	var nameEQ = name + "=";
 	var ca = document.cookie.split(';');
 	for(var i=0;i < ca.length;i++) {

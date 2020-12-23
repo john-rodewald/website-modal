@@ -117,3 +117,20 @@ a {
     text-decoration: inherit;
     border: inherit;
 }
+
+#navigation-container {
+    text-align: center;
+}
+
+#navigation-title {
+    padding-top: 50vh;
+    display: block;
+    margin: auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navigation-entry {
+    margin: 1em auto;
+}
