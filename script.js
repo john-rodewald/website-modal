@@ -25,10 +25,21 @@ function onMessage (event) {
 
 // Function that gets called from iframe
 function parentFunc (params) {
+    if (params === undefined) {
+
+        return;
+    };
+
     onCompleteBLMFlow(params);
 }
 
+// Function that gets called after TIN verification. Skipped if undefined.
 function storeTin (params) {
+    if (params === undefined) {
+
+        return;
+    };
+
     onCompletePayPaulFlow(params);
 }
 
