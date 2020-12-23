@@ -33,39 +33,6 @@ body {
     filter: brightness(35%);
 }
 
-#logo {
-    margin: 2em;
-    object-fit: contain;
-    width: 2em;
-}
-
-#gid-logo {
-    vertical-align: text-bottom;
-}
-
-#links-container {
-    color: white;
-}
-
-.header-link {
-    font-size: 1.25em;
-    display: inline-block;
-    margin: 1em;
-    margin-top: 2em;
-}
-
-.signup-link {
-    color: white;
-    border: 2px solid white;
-    border-radius: 50px;
-    background: none;
-    width: 8em;
-    height: 3em;
-    font-weight: bold;
-    margin: 1em;
-    margin-top: 2em;
-}
-
 .signup-link#signup {
     background: white;
     color: black;
@@ -82,23 +49,18 @@ body {
     color: white;
 }
 
-#banner-container * {
-    margin-top: 1em;
+#banner-title, #banner-subtitle, #banner-button {
+    display: block;
+    margin: auto;
 }
 
 #banner-title {
-    font-size: 4em;
-    font-weight: bold;
+    margin-bottom: 2em;
 }
 
-#banner-button {
-    background-color: #0D51FF;
-    color: inherit;
-    border-radius: 50px;
-    border: none;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 0.5em 4em;
+#banner-subtitle {
+    position: relative;
+    top: -3em;
 }
 
 #banner-button:hover {

@@ -25,7 +25,7 @@ function parentFunc(params) {
 }
 
 function onCompleteFlow(params) {
-    window.location.href = 'joined.html';
+    window.location.href = 'blm-joined.html';
     document.cookie = `username=${params}`;
 }
 
